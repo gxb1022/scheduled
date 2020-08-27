@@ -10,9 +10,9 @@ public class Test {
         Person person = new Person.Builder().age(23).name("ssss").build();
         System.out.println(person.toString());
         File file = new File("C:/Users/86159/Desktop/郭晓斌.docx");
-        try(FileInputStream fis = new FileInputStream(file)){
+        try (FileInputStream fis = new FileInputStream(file)) {
             //代码逻辑
-        }catch (IOException e){
+        } catch (IOException e) {
             e.getMessage();
         }
 

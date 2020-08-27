@@ -8,35 +8,35 @@ public class Person implements Serializable {
     private Integer age;
     private String sex;
 
-    private Person(Builder builder){
+    private Person(Builder builder) {
         this.name = builder.name;
         this.age = builder.age;
         this.sex = builder.sex;
 
     }
 
-    public static class Builder{
+    public static class Builder {
         private String name;
         private Integer age;
         private String sex;
 
 
-        public Builder sex(String sex){
+        public Builder sex(String sex) {
             this.sex = sex;
             return this;
         }
 
-        public Builder name(String name){
+        public Builder name(String name) {
             this.name = name;
             return this;
         }
 
-        public Builder age(Integer age){
+        public Builder age(Integer age) {
             this.age = age;
             return this;
         }
 
-        public Person build(){
+        public Person build() {
             return new Person(this);
         }
     }

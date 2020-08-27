@@ -6,33 +6,34 @@ public class Dog {
     private String color;
     private String sex;
 
-    public Dog(Builder builder){
+    public Dog(Builder builder) {
         this.name = builder.name;
         this.sex = builder.sex;
         this.color = builder.color;
 
     }
 
-    public static class Builder{
+    public static class Builder {
         private String name;
         private String color;
         private String sex;
 
-        public Builder name(String name){
+        public Builder name(String name) {
             this.name = name;
             return this;
         }
 
-        public Builder color(String color){
+        public Builder color(String color) {
             this.color = color;
             return this;
         }
 
-        public Builder sex(String sex){
+        public Builder sex(String sex) {
             this.sex = sex;
             return this;
         }
-        public Dog build(){
+
+        public Dog build() {
             return new Dog(this);
         }
     }
@@ -58,6 +59,7 @@ public class Dog {
         return color;
     }
 
+
     public void setColor(String color) {
         this.color = color;
     }
@@ -65,6 +67,7 @@ public class Dog {
     public String getSex() {
         return sex;
     }
+
 
     public void setSex(String sex) {
         this.sex = sex;

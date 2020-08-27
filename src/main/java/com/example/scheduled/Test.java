@@ -12,6 +12,7 @@ public class Test {
         File file = new File("C:/Users/86159/Desktop/郭晓斌.docx");
         try (FileInputStream fis = new FileInputStream(file)) {
             //代码逻辑
+            //11111
         } catch (IOException e) {
             e.getMessage();
         }
